@@ -718,9 +718,9 @@
 		};
 		E1DD20DF2FA20AEE0020AF3B /* XCRemoteSwiftPackageReference "LLMkit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Beingpax/LLMkit.git";
+			repositoryURL = "https://github.com/nomarek/LLMkit.git";
 			requirement = {
-				branch = main;
+				branch = "soniox-regions";
 				kind = branch;
 			};
 		};

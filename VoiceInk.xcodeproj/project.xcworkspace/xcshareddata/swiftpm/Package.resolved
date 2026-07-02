@@ -40,10 +40,10 @@
     {
       "identity" : "llmkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Beingpax/LLMkit.git",
+      "location" : "https://github.com/nomarek/LLMkit.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "fc9a18ce30ca5e7f49265fb3be8b3b02055d4fa9"
+        "branch" : "soniox-regions",
+        "revision" : "31110034325d361d0585479408e6e18a0a7a9eb7"
       }
     },
     {
