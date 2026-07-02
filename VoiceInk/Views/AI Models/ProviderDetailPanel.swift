@@ -87,6 +87,8 @@ struct ProviderDetailPanel: View {
     private var apiKeySection: some View {
         ProviderConfigurationGroup(title: "Connection") {
             VStack(alignment: .leading, spacing: 8) {
+                providerConfigurationControls
+
                 if isConfigured {
                     verifiedAPIKeyRow
                 } else {
@@ -95,6 +97,14 @@ struct ProviderDetailPanel: View {
 
                 verificationStatusMessage
             }
+        }
+    }
+
+    @ViewBuilder
+    private var providerConfigurationControls: some View {
+        if let cloudProvider = descriptor.cloudProvider,
+           CloudProviderConfigurationSection.hasConfiguration(for: cloudProvider.modelProvider) {
+            CloudProviderConfigurationSection(provider: cloudProvider.modelProvider)
         }
     }
 
